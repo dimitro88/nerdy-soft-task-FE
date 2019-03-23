@@ -1,0 +1,97 @@
+.modal-content {
+    background-color: black;
+    border: 2px solid orange;
+}
+
+.modal-header {
+    color: orange;
+    position: relative;
+}
+
+.modal-header span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.modal-footer {
+    height: 10vh;
+}
+
+.modal-footer Button{
+    width: 10%;
+    height: 6vh;
+    padding: 0;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+
+.modal-footer Button:hover, .modal-footer Button:focus, .modal-footer Button:checked {
+    background-color: darkorange;
+    border-color: darkorange;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.edit-station-form-container {
+    width: 100%;
+    height: 50vh;
+}
+
+.edit-station-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.edit-station-form-field-wrapper {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form-submit-button {
+    width: 40%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-form-submit-button Button{
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+
+.edit-form-submit-button Button:hover, .edit-form-submit-button Button:focus, .edit-form-submit-button Button:checked {
+    background-color: darkorange;
+    border-color: darkorange;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.edit-form-header-close-button {
+    position: absolute;
+    width: 3.5%;
+    height: 40%;
+    right: 2%;
+    border-radius: 50%;
+}
+
+.edit-form-header-close-button img {
+    cursor: pointer;
+}

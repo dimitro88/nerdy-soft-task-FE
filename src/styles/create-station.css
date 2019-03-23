@@ -1,0 +1,46 @@
+.create-form-submit-button Button{
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+
+.create-form-submit-button Button:hover, .create-form-submit-button Button:focus, .create-form-submit-button Button:checked {
+    background-color: darkorange;
+    border-color: darkorange;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.create-form-submit-button {
+    width: 40%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-station-form-container {
+    width: 100%;
+    height: 60vh;
+}
+
+.create-station-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.create-station-form-field-wrapper {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}

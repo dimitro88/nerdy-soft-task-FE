@@ -1,0 +1,473 @@
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-left: 1%;
+    width: 10%;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.menu-find-station-input {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-find-station-input .input-group {
+    width: 40%;
+}
+
+.menu-find-station-input .form-control {
+    width: 100%;
+}
+
+.log-buttons {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.log-buttons Button {
+    padding: 0;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+
+.log-buttons Button:hover, .log-buttons Button:focus, .log-buttons Button:checked {
+    background-color: darkorange;
+    border-color: darkorange;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.log-buttons span {
+    font-size: 18px;
+}
+
+.list-wrapper {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.list-container {
+    width: 50%;
+    height: 90%;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stations-list {
+    margin-top: 20px;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    text-align: -webkit-center;
+    margin-bottom: 20px;
+    padding: 0;
+    color: black;
+    font-weight: 800;
+    overflow: auto;
+}
+
+.list-item {
+    margin-top: 15px;
+    background-color: gray;
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.list-item-bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item-img {
+    width: 40%;
+    height: 100%;
+}
+
+.list-item-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.list-item-station-name {
+    height: 30%;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.list-item-station-name span {
+    margin-left: 2%;
+}
+
+.delete-item {
+    width: 7%;
+    height: 70%;
+    right: 2%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-item img, .edit-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.add-item img {
+    width: 80%;
+    height: 80%;
+}
+
+  .add-item {
+    width: 7%;
+    height: 70%;
+    right: 18%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-item {
+    width: 7%;
+    height: 70%;
+    right: 10%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favourite-title {
+    color: green;
+}
+
+.list-item-station-name:hover {
+    cursor: pointer;
+}
+
+.list-item-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+}
+
+.list-item-play-button img, .list-item-play-button img:hover {
+    width: 30%;
+    height: 60%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.player-wrapper {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.player-title {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    font-weight: 900;
+}
+
+.player {
+    width: 100%;
+    height: 50%;
+}
+
+.player * {
+    width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: orange;
+}
+
+audio {
+    border-radius: 1rem;
+    background-color: orange;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    font-weight: 800;
+    color: black;
+}
+
+@media (max-height: 500px) {
+    .log-buttons Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
+
+    .log-buttons span {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .log-buttons {
+        width: 25%;
+    }
+
+    .stations-list {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .log-buttons {
+        width: 30%;
+    }
+
+    .log-buttons span {
+        font-size: 17px;
+    }
+
+    .stations-list {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .log-buttons {
+        width: 30%;
+    }
+
+    .log-buttons span {
+        font-size: 16px;
+    }
+
+    .stations-list {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .stations-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .player-container {
+        width: 40%;
+        height: 100%;
+    }
+
+    .list-container {
+        width: 60%;
+        height: 90%;
+    }
+
+    .log-buttons {
+        width: 40%;
+    }
+
+    .log-buttons span {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .player-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .station-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .log-buttons span {
+        font-size: 13px;
+    }
+
+    .log-buttons {
+        width: 60%;
+    }
+
+    .player-container, .player {
+        width: 80%;
+    }
+
+    .log-buttons span {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .menu-find-station-input .input-group {
+        margin-left: 10%;
+        width: 60%;
+        height: 65%;
+    }
+
+    .menu-find-station-input .form-control {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-find-station-input .form-control::placeholder {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .log-buttons {
+        width: 80%;
+    }
+
+    .stations-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .player-title {
+        font-size: 12px;
+        font-weight: 800;
+        font-family: "Times New Roman";
+    }
+
+    .player-container, .player {
+        width: 100%;
+    }
+
+    .log-buttons span {
+        font-size: 12px;
+    }
+
+    .list-item-station-name span {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .delete-item, .edit-item, .add-item {
+        width: 12%;
+        height: 70%;
+    }
+
+    .edit-item {
+        right: 13%;
+    }
+
+    .add-item {
+        right: 23%;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+
+    .list-item {
+        height: 70px;
+    }
+
+    .player {
+        width: 90%;
+    }
+
+    .menu-find-station-input .input-group {
+        margin-left: 5%;
+        width: 85%;
+    }
+
+}
